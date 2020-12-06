@@ -1,0 +1,17 @@
+# List of VCS information or subdirectories of autoproj/ in which to find
+# package set definitions.
+
+package_sets:
+  - github: rock-core/package_set
+  - github: rock-core/rock-package_set
+
+  - dfkigit: wbc/wbc_package_set
+
+layout:
+  - rock.core   
+  - control/wbc
+  - gui/wbc_status_gui
+  - gui/wbc_ctrl_gui
+  - control/orogen/wbc
+  - control/orogen/wbc_solvers
+  - control/orogen/ctrl_lib

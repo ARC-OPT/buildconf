@@ -9,8 +9,3 @@ package_sets:
 
 layout: 
   - control/wbc
-  - gui/wbc_status_gui
-  - gui/wbc_ctrl_gui
-  - control/orogen/wbc
-  - control/orogen/wbc_solvers
-  - control/orogen/ctrl_lib

@@ -7,8 +7,7 @@ package_sets:
 
   - dfkigit: wbc/wbc_package_set
 
-layout:
-  - rock.core   
+layout: 
   - control/wbc
   - gui/wbc_status_gui
   - gui/wbc_ctrl_gui

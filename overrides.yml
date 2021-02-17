@@ -7,43 +7,4 @@
 #       url: git://my.own.git.server
 
 
-overrides:
-  - control/reflexxes:
-    dfkigit: dfki-control/reflexxes_type_iv.git
-    branch: master
-    patches:
-       -  $AUTOPROJ_SOURCE_DIR/remotes/dfki.control/patches/reflexxes_type_iv.patch
-
-  - ndlcom/orogen/ndlcom_sherpa_tt_joints:
-    branch: master
-
-  - ndlcom/orogen/ndlcom_device_driver:
-    branch: master
-
-  - ndlcom/ndlcom_device_driver:
-    branch: master
-
-  - ndlcom/orogen/ndlcom_efuse_board:
-    branch: master
-
-  - sensor_processing/orogen/kccd:
-    branch: allow_external_objects
-
-  - sensor_processing/kccdtools:
-    branch: allow_external_objects
-
-  - drivers/dynamixel:
-    dfkigit: rh5/drivers-dynamixel.git
-    branch: master
-
-  - drivers/orogen/servo_dynamixel:
-    dfkigit: rh5/drivers-orogen-servo_dynamixel.git
-    branch: master
-
-  # Change the following lines if you require a different model:
-  # E.g: abstract-smurf, abstract-smurf-external, abstract-smurf-gripper, abstract-urdf, ...
-  - models/robots/rh5:
-    dfkigit: models-robots/rh5_models/abstract-smurf
-    branch: master
-    with_submodules: true
-
+overrides: []

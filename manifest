@@ -7,7 +7,7 @@ package_sets:
   - github: rock-core/rock-osdeps-package_set
 
   - dfkigit: dfki-mechanics/hyrodyn/hyrodyn_package_set
-  - dfkigit: wbc/package_set
+  - dfkigit: dfki-control/wbc/package_set
 
 
 layout: 

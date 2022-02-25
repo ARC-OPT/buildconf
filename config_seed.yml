@@ -1,9 +1,9 @@
 ---
-osdeps_mode: os,gem,pip
+osdeps_mode: all
 autoproj_use_prerelease: false
 reused_autoproj_installations: []
 prefix: install
-GITHUB: http,ssh
+GITHUB: git
 GITHUB_ROOT: https://github.com
 GITHUB_PUSH_ROOT: 'git@github.com:'
 DFKIGIT: ssh
@@ -28,3 +28,5 @@ DFKIGIT_PRIVATE_ROOT: 'git@git.hb.dfki.de:'
 cxx11: true
 typelib_cxx_loader: castxml
 DEB_USE: true
+DEB_AUTOMATIC: true
+debian_release: master-20.06

@@ -24,7 +24,7 @@
 #
 
 # this needs to be called before the git server config
-if ENV["CONFIG_SEED_FROM_BUILDCONF"] != "" then
+if ENV["CONFIG_SEED_FROM_BUILDCONF"] != nil then
     seed_file = ENV['AUTOPROJ_CURRENT_ROOT'] + "/" + ENV['CONFIG_SEED_FROM_BUILDCONF']
     Autoproj.message "using config seed file: #{seed_file}"    
     Autoproj.config.load(path: seed_file)

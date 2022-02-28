@@ -13,4 +13,5 @@ package_sets:
 
 
 layout: 
-  - control/wbc
+  - rock.core
+  - control/orogen/wbc

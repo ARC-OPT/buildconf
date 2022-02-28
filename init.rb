@@ -24,12 +24,11 @@
 #
 
 # this needs to be called before the git server config
-if ENV.has_key?('CONFIG_SEED_FROM_BUILDCONF') then
-    seed_file = ENV['AUTOPROJ_CURRENT_ROOT'] + "/" + ENV['CONFIG_SEED_FROM_BUILDCONF']
+if ENV.has_key?('CONFIG_SEED_FROM_BUILDCONF') && ENV['CONFIG_SEED_FROM_BUILDCONF'] != "" then
+    seed_file = ENV['AUTOPROJ_CURRENT_ROOT'] + "/autoproj/" + ENV['CONFIG_SEED_FROM_BUILDCONF']
     Autoproj.message "using config seed file: #{seed_file}"    
     Autoproj.config.load(path: seed_file)
 end
-
 
 
 require 'autoproj/gitorious'

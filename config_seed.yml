@@ -6,8 +6,8 @@ prefix: install
 GITHUB: git
 GITHUB_ROOT: https://github.com
 GITHUB_PUSH_ROOT: 'git@github.com:'
-DFKIGIT: ssh
-DFKIGIT_ROOT: 'git@git.hb.dfki.de:'
+DFKIGIT: http,ssh
+DFKIGIT_ROOT: 'http://git.hb.dfki.de:'
 DFKIGIT_PUSH_ROOT: 'git@git.hb.dfki.de:'
 ROCK_SELECTED_FLAVOR: master
 ROCK_FLAVOR: master
@@ -30,3 +30,5 @@ typelib_cxx_loader: castxml
 DEB_USE: true
 DEB_AUTOMATIC: true
 debian_release: master-20.06
+apt_dpkg_update: true
+USE_PYTHON: false

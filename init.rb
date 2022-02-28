@@ -23,6 +23,15 @@
 # NOTE: Variables set like this are exported in the generated 'env.sh' script.
 #
 
+# this needs to be called before the git server config
+if ENV["CONFIG_SEED_FROM_BUILDCONF"] != "" then
+    seed_file = ENV['AUTOPROJ_CURRENT_ROOT'] + "/" + ENV['CONFIG_SEED_FROM_BUILDCONF']
+    Autoproj.message "using config seed file: #{seed_file}"    
+    Autoproj.config.load(path: seed_file)
+end
+
+
+
 require 'autoproj/gitorious'
 
 Autoproj.gitorious_server_configuration('GITHUB', 'github.com', :http_url => 'https://github.com')
@@ -51,3 +60,4 @@ Autobuild.env_set 'LC_NUMERIC','C'
 # work around for base/orogen/types, in flavor stable, since it depends on tools/orogen_metadata, 
 # which is only in flavor master currently
 Autobuild.env_set 'ROCK_DISABLE_CROSS_FLAVOR_CHECKS', '1'
+

@@ -14,5 +14,3 @@ package_sets:
 
 layout: 
   - rock.core
-  - control/orogen/wbc
-  - tools/orocos.rb

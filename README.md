@@ -1,3 +1,3 @@
 ### Installation
 
-See [here](https://git.hb.dfki.de/dfki-control/wbc/documentation/-/wikis/WBC-installation-using-Rock)
+See [here](https://arc-opt.github.io/Documentation/installation/installation_rock.html)

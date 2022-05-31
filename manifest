@@ -6,10 +6,7 @@ package_sets:
   - github: rock-core/rock-package_set
   - github: rock-core/rock-osdeps-package_set
   - github: rock-core/compilerspeedup-package_set
-
-
-  - dfkigit: dfki-mechanics/hyrodyn/hyrodyn_package_set
-  - dfkigit: dfki-control/wbc/package_set
+  - github: ARC-OPT/package_set
 
 
 layout: 

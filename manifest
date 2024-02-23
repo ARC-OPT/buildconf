@@ -4,10 +4,11 @@
 package_sets:
   - github: rock-core/package_set
   - github: rock-core/rock-package_set
-  - github: rock-core/rock-osdeps-package_set
   - github: rock-core/compilerspeedup-package_set
   - github: ARC-OPT/package_set
 
 
 layout: 
   - rock.core
+  - control/orogen/wbc
+  - control/orogen/ctrl_lib
